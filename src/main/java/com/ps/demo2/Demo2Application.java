@@ -2,8 +2,12 @@ package com.ps.demo2;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
-@SpringBootApplication
+import com.ps.demo2.repository.UserRepository;
+
+@SpringBootApplication()
+@EnableJpaRepositories(basePackages = "com.ps.demo2.repository")
 public class Demo2Application {
 
 	public static void main(String[] args) {
