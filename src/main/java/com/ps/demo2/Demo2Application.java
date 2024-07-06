@@ -5,6 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 import com.ps.demo2.repository.UserRepository;
+import com.ps.demo2.repository.RoleRepository;
 
 @SpringBootApplication()
 @EnableJpaRepositories(basePackages = "com.ps.demo2.repository")
